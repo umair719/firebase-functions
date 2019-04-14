@@ -65,4 +65,4 @@ node_modules/
 .env
 
 # idea config
-.idea/
+.idea/*
