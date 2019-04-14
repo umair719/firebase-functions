@@ -1,3 +1,6 @@
+# idea config
+.idea/
+
 # Logs
 logs
 *.log
@@ -64,5 +67,4 @@ node_modules/
 # dotenv environment variables file
 .env
 
-# idea config
-.idea/*
+

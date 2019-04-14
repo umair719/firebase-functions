@@ -31,8 +31,8 @@ exports.addPerson = functions.https.onCall((data, context) => {
         console.log('New person added');
         return "Ok";
     }).catch((error) => {
-        throw new functions.https.HttpsError('unknown', error.message, error)
-    })
+        throw new functions.https.HttpsError('unknown', error.message, error);
+    });
 });
 
 
@@ -43,5 +43,4 @@ exports.date = functions.https.onRequest((req, res) => {
     const date = new Date();
     const snapshot = admin.database().ref('/dates').push({now: date.toDateString()});
     res.redirect(303, snapshot.ref.toString());
-    //res.send(date.toDateString());
 });
